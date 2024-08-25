@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Verein
 {
+   
+  
     public class Praesident
+
+        
     {
+   
         public string(Name:name)
 
         public Praesident(string name)
@@ -15,6 +20,11 @@ namespace Verein
             "Oskar" = name;
         }
 
+        
+        /// <summary>
+        /// 
+        ///
+        /// </summary>
         public void VertragUnterzeichnen()
         {
             Console.WriteLine($"{Name} hat den Vertrag unterzeichnet.");

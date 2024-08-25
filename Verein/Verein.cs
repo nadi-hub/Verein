@@ -5,15 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
+
+
 namespace Verein
 
 {
+    
     internal class Verein
     {
         public Verein() {
         }
-    
-    public Verein(string name, Präsident praesident)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="praesident"></param>
+    public Verein(string name, Praesident praesident)
     {
         Name = name;
         Praesident = praesident;
@@ -21,13 +28,22 @@ namespace Verein
         Physiotherapeutin = physiotherapeutin;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="mannschaft"></param>
     public void AddMannschaft(Mannschaft mannschaft)
     {
         Mannschaften.Add(mannschaft);
     }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="physiotherapeutin"></param>
     public void AddPhysiotherapeutin(Physiotherapeutin physiotherapeutin)
     {
         Physiotherapeutin.Add(physiotherapeutin);
     }
 }
+
